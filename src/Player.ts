@@ -2,7 +2,7 @@ import { type IVector2 } from "./IVector2";
 
 export class Player {
     public readonly id: number;
-    public readonly factionId: string | null;
+    public readonly factionId: string;
 
     public position: IVector2;
 
