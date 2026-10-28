@@ -5,7 +5,7 @@ export class Registry<TId, TItem> {
 
     public add(id: TId, item: TItem): void {
         if (this._items.has(id)) {
-            throw new Error(`Duplicate id: ${id}`);
+            throw new Error(`Duplicate id: "${id}"`);
         }
 
         this._items.set(id, item);
@@ -13,9 +13,13 @@ export class Registry<TId, TItem> {
 
     public remove(id: TId): void {
         if (!this._items.has(id)) {
-            throw new Error(`Id not found: ${id}`);
+            throw new Error(`Id not found: "${id}"`);
         }
 
         this._items.delete(id);
+    }
+
+    public has(id: TId): boolean {
+        return this._items.has(id);
     }
 }
