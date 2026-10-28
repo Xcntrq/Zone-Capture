@@ -34,6 +34,10 @@ export class Zone {
         this.nextIncomeAt = nowMs + this.incomeIntervalMs;
     }
 
+    public containsPoint(point: IVector2): boolean {
+        return distSqr(this.center, point) <= this.radius * this.radius;
+    }
+
     public toState(): IZoneState {
         return {
             id: this.id,
@@ -47,16 +51,5 @@ export class Zone {
             captureProgress: this.captureProgress,
             isContested: this.isContested,
         };
-    }
-
-    public setOwner(factionId: string | null, nowMs: number) {
-        this.owningFactionId = factionId;
-        this.capturingFactionId = null;
-        this.captureProgress = 0;
-        this.nextIncomeAt = nowMs + this.incomeIntervalMs;
-    }
-
-    public containsPoint(point: IVector2): boolean {
-        return distSqr(this.center, point) <= this.radius * this.radius;
     }
 }
