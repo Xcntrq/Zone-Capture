@@ -12,6 +12,7 @@ export const zonesConfig: readonly IZoneConfig[] = [
         center: { x: 100, y: 0 },
         radius: 100,
         initialOwningFactionId: "blue",
-        incomePerSecond: 50,
+        incomeAmount: 50,
+        incomeIntervalMs: 1_000,
     },
 ];

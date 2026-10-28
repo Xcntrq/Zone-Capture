@@ -5,5 +5,10 @@ export interface IZoneConfig {
     readonly center: IVector2;
     readonly radius: number;
     readonly initialOwningFactionId: string | null;
-    readonly incomePerSecond?: number;
+    readonly incomeAmount?: number;
+    readonly incomeIntervalMs?: number;
+    readonly captureThreshold?: number;
+    readonly capturingPlayersLimit?: number;
+    readonly captureRatePerPlayerPerSecond?: number;
+    readonly captureDecayRatePerSecond?: number;
 }
