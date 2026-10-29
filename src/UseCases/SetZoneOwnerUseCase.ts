@@ -1,5 +1,5 @@
 import { type ResetZoneCaptureUseCase } from "./ResetZoneCaptureUseCase";
-import { type Zone } from "./Zone";
+import { type Zone } from "../Model/Zone";
 
 export class SetZoneOwnerUseCase {
     private readonly resetZoneCaptureUseCase: ResetZoneCaptureUseCase;

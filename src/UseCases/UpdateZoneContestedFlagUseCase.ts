@@ -1,4 +1,4 @@
-import { type Zone } from "./Zone";
+import { type Zone } from "../Model/Zone";
 
 export type UpdateZoneContestedFlagResult = "contestStarted" | "contestEnded" | "notChanged";
 

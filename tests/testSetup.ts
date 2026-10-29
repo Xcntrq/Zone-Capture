@@ -1,24 +1,24 @@
-import { UpdateZoneContestedFlagUseCase } from "../src/UpdateZoneContestedFlagUseCase";
-import { AdvanceZoneCaptureUseCase } from "../src/AdvanceZoneCaptureUseCase";
-import { DecayZoneCaptureUseCase } from "../src/DecayZoneCaptureUseCase";
-import { ResetZoneCaptureUseCase } from "../src/ResetZoneCaptureUseCase";
-import { ZoneIncomePayingService } from "../src/ZoneIncomePayingService";
-import { PayZoneIncomeUseCase } from "../src/PayZoneIncomeUseCase";
-import { ZoneCapturingService } from "../src/ZoneCapturingService";
-import { SetZoneOwnerUseCase } from "../src/SetZoneOwnerUseCase";
-import { ManualTimeProvider } from "../src/ManualTimeProvider";
-import { type IGlobalConfig } from "../src/IGlobalConfig";
-import { type ZoneEventName } from "../src/ZoneEvents";
-import { type IZoneConfig } from "../src/IZoneConfig";
-import { type IZoneState } from "../src/IZoneState";
-import { ZoneEventBus } from "../src/ZoneEventBus";
-import { type IVector2 } from "../src/IVector2";
-import { PlayersAPI } from "../src/PlayersAPI";
-import { ZonesAPI } from "../src/ZonesAPI";
-import { Registry } from "../src/Registry";
-import { Faction } from "../src/Faction";
-import { Player } from "../src/Player";
-import { Zone } from "../src/Zone";
+import { UpdateZoneContestedFlagUseCase } from "../src/UseCases/UpdateZoneContestedFlagUseCase";
+import { AdvanceZoneCaptureUseCase } from "../src/UseCases/AdvanceZoneCaptureUseCase";
+import { DecayZoneCaptureUseCase } from "../src/UseCases/DecayZoneCaptureUseCase";
+import { ResetZoneCaptureUseCase } from "../src/UseCases/ResetZoneCaptureUseCase";
+import { ZoneIncomePayingService } from "../src/Services/ZoneIncomePayingService";
+import { PayZoneIncomeUseCase } from "../src/UseCases/PayZoneIncomeUseCase";
+import { ZoneCapturingService } from "../src/Services/ZoneCapturingService";
+import { SetZoneOwnerUseCase } from "../src/UseCases/SetZoneOwnerUseCase";
+import { ManualTimeProvider } from "../src/Time/ManualTimeProvider";
+import { type IGlobalConfig } from "../src/Configs/IGlobalConfig";
+import { type ZoneEventName } from "../src/Events/ZoneEvents";
+import { type IZoneConfig } from "../src/Configs/IZoneConfig";
+import { type IZoneState } from "../src/Model/IZoneState";
+import { ZoneEventBus } from "../src/Events/ZoneEventBus";
+import { type IVector2 } from "../src/Model/IVector2";
+import { PlayersAPI } from "../src/API/PlayersAPI";
+import { Registry } from "../src/Model/Registry";
+import { ZonesAPI } from "../src/API/ZonesAPI";
+import { Faction } from "../src/Model/Faction";
+import { Player } from "../src/Model/Player";
+import { Zone } from "../src/Model/Zone";
 
 const globalTestConfig: IGlobalConfig = {
     tickIntervalMs: 100,

@@ -6,7 +6,7 @@ export class Player {
             throw new Error(`Invalid position: "${pos.x},${pos.y}" is not finite`);
         }
 
-        return pos;
+        return { x: pos.x, y: pos.y };
     }
 
     public readonly id: number;

@@ -1,6 +1,6 @@
-import { type ITimeUser } from "./ITimeUser";
-import { type ITimeProvider } from "./ITimeProvider";
 import { type ITimeUserRegistrar } from "./ITimeUserRegistrar";
+import { type ITimeProvider } from "./ITimeProvider";
+import { type ITimeUser } from "./ITimeUser";
 
 export class ManualTimeProvider implements ITimeProvider, ITimeUserRegistrar {
     private readonly timeUsers = new Set<ITimeUser>();

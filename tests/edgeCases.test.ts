@@ -1,6 +1,6 @@
 import { describe, it, expect } from "vitest";
 import { createTestSetup, AWAY } from "./testSetup";
-import { type IZoneConfig } from "../src/IZoneConfig";
+import { type IZoneConfig } from "../src/Configs/IZoneConfig";
 
 describe("edge cases", () => {
     it("the state is correct after player leaves the zone during capture", () => {

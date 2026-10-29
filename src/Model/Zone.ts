@@ -1,6 +1,6 @@
 import { type IVector2, distSqr, isVectorFinite } from "./IVector2";
-import { type IZoneConfig } from "./IZoneConfig";
-import { type IGlobalConfig } from "./IGlobalConfig";
+import { type IGlobalConfig } from "../Configs/IGlobalConfig";
+import { type IZoneConfig } from "../Configs/IZoneConfig";
 import { type IZoneState } from "./IZoneState";
 
 export class Zone {
@@ -9,7 +9,7 @@ export class Zone {
             throw new Error(`Invalid center for zone "${zoneId}": "${center.x},${center.y}" is not finite`);
         }
 
-        return center;
+        return { x: center.x, y: center.y };
     }
 
     private static validatePositiveInt(zoneId: string, name: string, value: number): number {

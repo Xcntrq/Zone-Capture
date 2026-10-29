@@ -1,22 +1,22 @@
-import { UpdateZoneContestedFlagUseCase } from "./UpdateZoneContestedFlagUseCase";
-import { AdvanceZoneCaptureUseCase } from "./AdvanceZoneCaptureUseCase";
-import { DecayZoneCaptureUseCase } from "./DecayZoneCaptureUseCase";
-import { ResetZoneCaptureUseCase } from "./ResetZoneCaptureUseCase";
-import { ZoneIncomePayingService } from "./ZoneIncomePayingService";
-import { PayZoneIncomeUseCase } from "./PayZoneIncomeUseCase";
-import { ZoneCapturingService } from "./ZoneCapturingService";
-import { SetZoneOwnerUseCase } from "./SetZoneOwnerUseCase";
-import { ManualTimeProvider } from "./ManualTimeProvider";
-import { type IZoneState } from "./IZoneState";
-import { globalConfig } from "./globalConfig";
-import { ZoneEventBus } from "./ZoneEventBus";
-import { zonesConfig } from "./zonesConfig";
-import { PlayersAPI } from "./PlayersAPI";
-import { ZonesAPI } from "./ZonesAPI";
-import { Registry } from "./Registry";
-import { Faction } from "./Faction";
-import { Player } from "./Player";
-import { Zone } from "./Zone";
+import { UpdateZoneContestedFlagUseCase } from "./UseCases/UpdateZoneContestedFlagUseCase";
+import { AdvanceZoneCaptureUseCase } from "./UseCases/AdvanceZoneCaptureUseCase";
+import { DecayZoneCaptureUseCase } from "./UseCases/DecayZoneCaptureUseCase";
+import { ResetZoneCaptureUseCase } from "./UseCases/ResetZoneCaptureUseCase";
+import { ZoneIncomePayingService } from "./Services/ZoneIncomePayingService";
+import { PayZoneIncomeUseCase } from "./UseCases/PayZoneIncomeUseCase";
+import { ZoneCapturingService } from "./Services/ZoneCapturingService";
+import { SetZoneOwnerUseCase } from "./UseCases/SetZoneOwnerUseCase";
+import { ManualTimeProvider } from "./Time/ManualTimeProvider";
+import { globalConfig } from "./Configs/globalConfig";
+import { type IZoneState } from "./Model/IZoneState";
+import { ZoneEventBus } from "./Events/ZoneEventBus";
+import { zonesConfig } from "./Configs/zonesConfig";
+import { PlayersAPI } from "./API/PlayersAPI";
+import { Registry } from "./Model/Registry";
+import { ZonesAPI } from "./API/ZonesAPI";
+import { Faction } from "./Model/Faction";
+import { Player } from "./Model/Player";
+import { Zone } from "./Model/Zone";
 
 function main(): void {
     const logWithTimestamp = (message: string) => {

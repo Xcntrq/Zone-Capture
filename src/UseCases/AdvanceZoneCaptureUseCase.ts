@@ -1,6 +1,6 @@
 import { type ResetZoneCaptureUseCase } from "./ResetZoneCaptureUseCase";
 import { type SetZoneOwnerUseCase } from "./SetZoneOwnerUseCase";
-import { type Zone } from "./Zone";
+import { type Zone } from "../Model/Zone";
 
 export type AdvanceZoneCaptureResult = "notFullyCaptured" | "fullyCaptured";
 

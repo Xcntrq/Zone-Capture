@@ -1,5 +1,5 @@
-import { type Faction } from "./Faction";
-import { type Zone } from "./Zone";
+import { type Faction } from "../Model/Faction";
+import { type Zone } from "../Model/Zone";
 
 export class PayZoneIncomeUseCase {
     public execute(zone: Zone, faction: Faction, nowMs: number): number {

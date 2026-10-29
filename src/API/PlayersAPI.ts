@@ -1,7 +1,7 @@
-import { type IVector2 } from "./IVector2";
-import { type Registry } from "./Registry";
-import { type Faction } from "./Faction";
-import { Player } from "./Player";
+import { type IVector2 } from "../Model/IVector2";
+import { type Registry } from "../Model/Registry";
+import { type Faction } from "../Model/Faction";
+import { Player } from "../Model/Player";
 
 export class PlayersAPI {
     private readonly playerReg: Registry<number, Player>;

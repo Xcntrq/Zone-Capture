@@ -1,13 +1,13 @@
-import { type UpdateZoneContestedFlagUseCase } from "./UpdateZoneContestedFlagUseCase";
-import { type AdvanceZoneCaptureUseCase } from "./AdvanceZoneCaptureUseCase";
-import { type DecayZoneCaptureUseCase } from "./DecayZoneCaptureUseCase";
-import { type ResetZoneCaptureUseCase } from "./ResetZoneCaptureUseCase";
-import { type ITimeProvider } from "./ITimeProvider";
-import { type ZoneEventBus } from "./ZoneEventBus";
-import { type ITimeUser } from "./ITimeUser";
-import { type Registry } from "./Registry";
-import { type Player } from "./Player";
-import { type Zone } from "./Zone";
+import { type UpdateZoneContestedFlagUseCase } from "../UseCases/UpdateZoneContestedFlagUseCase";
+import { type AdvanceZoneCaptureUseCase } from "../UseCases/AdvanceZoneCaptureUseCase";
+import { type DecayZoneCaptureUseCase } from "../UseCases/DecayZoneCaptureUseCase";
+import { type ResetZoneCaptureUseCase } from "../UseCases/ResetZoneCaptureUseCase";
+import { type ITimeProvider } from "../Time/ITimeProvider";
+import { type ZoneEventBus } from "../Events/ZoneEventBus";
+import { type ITimeUser } from "../Time/ITimeUser";
+import { type Registry } from "../Model/Registry";
+import { type Player } from "../Model/Player";
+import { type Zone } from "../Model/Zone";
 
 export class ZoneCapturingService implements ITimeUser {
     private readonly zoneEventBus: ZoneEventBus;

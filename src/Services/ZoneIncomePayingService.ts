@@ -1,10 +1,10 @@
-import { type PayZoneIncomeUseCase } from "./PayZoneIncomeUseCase";
-import { type ITimeProvider } from "./ITimeProvider";
-import { type ZoneEventBus } from "./ZoneEventBus";
-import { type ITimeUser } from "./ITimeUser";
-import { type Registry } from "./Registry";
-import { type Faction } from "./Faction";
-import { type Zone } from "./Zone";
+import { type PayZoneIncomeUseCase } from "../UseCases/PayZoneIncomeUseCase";
+import { type ITimeProvider } from "../Time/ITimeProvider";
+import { type ZoneEventBus } from "../Events/ZoneEventBus";
+import { type ITimeUser } from "../Time/ITimeUser";
+import { type Registry } from "../Model/Registry";
+import { type Faction } from "../Model/Faction";
+import { type Zone } from "../Model/Zone";
 
 export class ZoneIncomePayingService implements ITimeUser {
     private readonly payZoneIncomeUseCase: PayZoneIncomeUseCase;

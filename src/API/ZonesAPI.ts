@@ -1,11 +1,11 @@
-import { type ZoneEventName, type ZoneEventAction, type UnsubAction } from "./ZoneEvents";
-import { type SetZoneOwnerUseCase } from "./SetZoneOwnerUseCase";
-import { type ITimeProvider } from "./ITimeProvider";
-import { type ZoneEventBus } from "./ZoneEventBus";
-import { type IZoneState } from "./IZoneState";
-import { type Registry } from "./Registry";
-import { type Faction } from "./Faction";
-import { type Zone } from "./Zone";
+import { type ZoneEventName, type ZoneEventAction, type UnsubAction } from "../Events/ZoneEvents";
+import { type SetZoneOwnerUseCase } from "../UseCases/SetZoneOwnerUseCase";
+import { type ITimeProvider } from "../Time/ITimeProvider";
+import { type ZoneEventBus } from "../Events/ZoneEventBus";
+import { type IZoneState } from "../Model/IZoneState";
+import { type Registry } from "../Model/Registry";
+import { type Faction } from "../Model/Faction";
+import { type Zone } from "../Model/Zone";
 
 export class ZonesAPI {
     private readonly zoneReg: Registry<string, Zone>;

@@ -1,4 +1,4 @@
-import { type IVector2 } from "./IVector2";
+import { type IVector2 } from "../Model/IVector2";
 
 export interface IZoneConfig {
     readonly id: string;
