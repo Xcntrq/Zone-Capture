@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "start": "tsx src/main.ts",
-    "test": "vitest run",
+    "test": "vitest run --reporter=verbose",
     "typecheck": "tsc --noEmit"
   },
   "keywords": [],
