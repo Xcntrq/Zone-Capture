@@ -4,21 +4,21 @@ export const zonesConfig: readonly IZoneConfig[] = [
     {
         id: "field",
         center: { x: 0, y: 0 },
-        radius: 100,
+        radius: 50,
         initialOwningFactionId: null,
     },
     {
         id: "docks",
-        center: { x: -100, y: 0 },
-        radius: 100,
+        center: { x: -200, y: 0 },
+        radius: 50,
         initialOwningFactionId: "red",
     },
     {
         id: "factory",
-        center: { x: 100, y: 0 },
-        radius: 100,
+        center: { x: 200, y: 0 },
+        radius: 50,
         initialOwningFactionId: "blue",
         incomeAmount: 50,
-        incomeIntervalMs: 1_000,
+        incomeIntervalMs: 10_000,
     },
 ];
