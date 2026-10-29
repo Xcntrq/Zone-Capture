@@ -8,3 +8,7 @@ export function distSqr(a: IVector2, b: IVector2): number {
     const dy: number = a.y - b.y;
     return dx * dx + dy * dy;
 }
+
+export function isVectorFinite(v: IVector2): boolean {
+    return Number.isFinite(v.x) && Number.isFinite(v.y);
+}
